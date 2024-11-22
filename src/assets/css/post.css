@@ -1,0 +1,121 @@
+/* 统一字体样式 */
+* {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .post-container {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .post-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 16px;
+    object-fit: cover;
+  }
+  
+  .user-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .post-content-wrapper {
+    margin-bottom: 20px;
+  }
+  
+  .post-content-wrapper p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .comments-section {
+    margin-top: 20px;
+  }
+  
+  .comments-section h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  .comments-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .comment-item {
+    display: flex;
+    align-items: flex-start;
+    background: #f9f9f9;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .comment-avatar img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+  }
+  
+  .comment-content {
+    flex: 1;
+  }
+  
+  .comment-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  
+  .comment-time {
+    font-size: 12px;
+    color: #888;
+  }
+  .view-button{
+    background: linear-gradient(135deg, #6a5acd, #8a2be2);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .view-button:hover {
+    background: linear-gradient(135deg, #8a2be2, #6a5acd);
+    transform: translateY(-2px);
+  }
+  
+  .view-button:active {
+    transform: translateY(2px);
+  }

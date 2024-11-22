@@ -1,14 +1,16 @@
 <template>
-  <PostCompotent></PostCompotent>
+  <PostList></PostList>
+  <!-- <CommentCompotent></CommentCompotent> -->
 </template>
 
 <script>
-import PostCompotent from "./components/PostCompotent.vue";
-
+import PostList from "./components/PostList.vue";
+// import CommentCompotent from "./components/CommentCompotent.vue";
 export default {
-  name: "App",
+  name: "AppComponent",
   components: {
-    PostCompotent,
+    PostList,
+    // CommentCompotent,
   },
 };
 </script>
