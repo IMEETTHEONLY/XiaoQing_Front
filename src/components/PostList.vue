@@ -26,7 +26,7 @@ export default {
   },
   mounted() {
     const authToken =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsiaWQiOjIsInVzZXJuYW1lIjoiemhhbmdzYW4ifSwiZXhwIjoxNzMyMjgzMzc0fQ.K269jlhFXEV-TUFMW9EEX4ZhQXcTDSNgrsf5QZCluG8";
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsiaWQiOjEsInVzZXJuYW1lIjoibW94dWV5YW8ifSwiZXhwIjoxNzMyNDEwMjM1fQ.tVlgfB0iAJUK2WWBCQBttjfUmioUXNmhVSC4Q7M2U0g";
     // 使用 axios 发送 GET 请求获取帖子数据
     axios
       .get("http://localhost:8080/post/get", {

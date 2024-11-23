@@ -91,7 +91,7 @@ export default {
      console.log(child_comment);
 
      //点击回复了调用接口传递给数据库
-     const add_comment_res=await add_comment(child_comment.content,child_comment.master_id,props.comment.post_id);
+     const add_comment_res = await add_comment(child_comment.content,child_comment.master_id,props.comment.post_id);
      if(add_comment_res.code==0){
        console.log("评论成功");
      }
