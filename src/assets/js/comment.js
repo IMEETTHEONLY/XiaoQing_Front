@@ -2,7 +2,7 @@ import axios from "axios";
 
 const BASE_URL = "http://localhost:8080/comment";
 const token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsiaWQiOjIsInVzZXJuYW1lIjoiemhhbmdzYW4ifSwiZXhwIjoxNzMyMjgzMzc0fQ.K269jlhFXEV-TUFMW9EEX4ZhQXcTDSNgrsf5QZCluG8";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsiaWQiOjEsInVzZXJuYW1lIjoibW94dWV5YW8ifSwiZXhwIjoxNzMyNDEwMjM1fQ.tVlgfB0iAJUK2WWBCQBttjfUmioUXNmhVSC4Q7M2U0g";
 //添加帖子
 export const add_comment = async (content, master_id, post_id) => {
   const res = await axios.post(
