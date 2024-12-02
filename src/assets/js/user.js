@@ -2,7 +2,7 @@
 import axios from "axios";
 const BASE_URL = "http://localhost:8080/user";
 const token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsiaWQiOjIsInVzZXJuYW1lIjoiemhhbmdzYW4ifSwiZXhwIjoxNzMyMjgzMzc0fQ.K269jlhFXEV-TUFMW9EEX4ZhQXcTDSNgrsf5QZCluG8";
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsiaWQiOjIsInVzZXJuYW1lIjoiemhhbmdzYW4ifSwiZXhwIjoxNzMzMTQ3MjgxfQ.CCa2UWrZRraN4iepbtX4H41vttXDyYL1WnOxijSPfck";
 
 export const get_user = async (create_user) => {
   //异步调用get

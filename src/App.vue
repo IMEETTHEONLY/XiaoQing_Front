@@ -1,15 +1,13 @@
 <template>
   <router-view></router-view>
-  <!-- <CommentCompotent></CommentCompotent> -->
-   <button @click="logout">退出登陆</button>
+  <button @click="logout">退出登陆</button>
 </template>
 
 <script>
-import { computed, onMounted } from 'vue';
-import { useStore } from 'vuex';
-import { useRouter } from 'vue-router';
+import { computed, onMounted } from "vue";
+import { useStore } from "vuex";
+import { useRouter } from "vue-router";
 
-// import CommentCompotent from "./components/CommentCompotent.vue";
 export default {
   name: "AppComponent",
   setup() {
@@ -17,18 +15,18 @@ export default {
     const router = useRouter();
     const isLoggedIn = computed(() => store.state.isLoggedIn);
 
-    onMounted(async() => {
+    onMounted(async () => {
       if (!isLoggedIn.value) {
-        router.push('/login');
+        router.push("/login");
       }
     });
     const logout = () => {
-      store.commit('logOut');
-      router.push('/login');
-    }
+      store.commit("logOut");
+      router.push("/login");
+    };
     return {
-      logout
-    }
+      logout,
+    };
   },
 };
 </script>
